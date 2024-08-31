@@ -33,3 +33,30 @@ video::-webkit-media-controls {
     cursor: pointer;
 }
 
+#seek-back:hover, #play-pause:hover, #seek-forward:hover, #stop:hover {
+    background-color: #3e8e41;
+}
+
+#volume-label {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#volume {
+    width: 100px;
+    height: 10px;
+    margin: 10px 0;
+}
+
+#playback-speed {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
