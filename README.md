@@ -2,6 +2,6 @@
 
 
 
-This project is a branded .mp4 vieo player. Take a look here: https://itskme.github.io/VideoPlayer/
+This project is a branded .mp4 video player. Take a look here: https://itskme.github.io/VideoPlayer/
 
 You can make your own branding or remove mine and use the core of this project as your own local, web video player.
