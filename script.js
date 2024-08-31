@@ -36,3 +36,19 @@ stopButton.addEventListener('click', () => {
     playPauseButton.textContent = 'Play';
 });
 
+video.addEventListener('timeupdate', () => {
+    const progress = (video.currentTime / video.duration) * 100;
+    progressBar.value = progress;
+});
+
+progressBar.addEventListener('change', () => {
+    const progress = progressBar.value;
+    const currentTime = (progress / 100) * video.duration;
+    video.currentTime = currentTime;
+});
+
+volumeBar.addEventListener('change', () => {
+    const volume = volumeBar.value / 100;
+    video.volume = volume;
+});
+
