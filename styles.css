@@ -1,0 +1,35 @@
+
+.video-player {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    max-height: 80vw; 
+}
+
+.video-player video {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain; 
+    max-height: 80vh; 
+}
+
+video::-webkit-media-controls {
+    display: none;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+#seek-back, #play-pause, #seek-forward, #stop {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
