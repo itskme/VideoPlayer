@@ -52,3 +52,25 @@ volumeBar.addEventListener('change', () => {
     video.volume = volume;
 });
 
+playbackSpeedSelect.addEventListener('change', () => {
+    const playbackSpeed = playbackSpeedSelect.value;
+    video.playbackRate = playbackSpeed;
+})
+
+seekBackButton.addEventListener('click', () => {
+    video.currentTime -= 15;
+});
+
+seekForwardButton.addEventListener('click', () => {
+    video.currentTime += 15;
+});
+
+fullscreenButton.addEventListener('click', () => {
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+        fullscreenButton.textContent = 'Fullscreen';
+    } else {
+        videoPlayer.requestFullscreen();
+        fullscreenButton.textContent = 'Exit FS';
+    }
+});
